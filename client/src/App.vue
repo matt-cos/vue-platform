@@ -1,5 +1,18 @@
 <template>
   <div id="app">
+    <h2>Navigation</h2>
+    <ul>
+      <li>
+        <a href="/">
+          Home
+        </a>
+      </li>
+      <li>
+        <a href="/posts-page">
+          Posts
+        </a>
+      </li>
+    </ul>
     <router-view/>
   </div>
 </template>
@@ -18,5 +31,19 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+h1, h2 {
+  font-weight: normal;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  display: inline-block;
+  margin: 0 10px;
+}
+a {
+  color: #42b983;
 }
 </style>

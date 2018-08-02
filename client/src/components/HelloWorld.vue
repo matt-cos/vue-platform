@@ -1,6 +1,9 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
+    <div v-for="post in homeContent" v-bind:key="post">
+      <h1>{{ post.title }}</h1>
+      <p>{{ post.description }}</p>
+    </div>
     <h2>Essential Links</h2>
     <ul>
       <li>
@@ -91,12 +94,34 @@
   </div>
 </template>
 
-<script>
+<!-- <script>
 export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'Matt\'s Vue Platform',
+      description: 'I am building this platform to in an attempt to learn Vue'
+    }
+  }
+}
+</script> -->
+
+<script>
+import PostsService from '@/services/PostsService'
+export default {
+  name: 'homeContent',
+  data () {
+    return {
+      homeContent: []
+    }
+  },
+  mounted () {
+    this.getHomeContent()
+  },
+  methods: {
+    async getHomeContent () {
+      const response = await PostsService.fetchHome()
+      this.homeContent = response.data
     }
   }
 }
@@ -104,18 +129,5 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1, h2 {
-  font-weight: normal;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
+
 </style>

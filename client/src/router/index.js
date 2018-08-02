@@ -14,7 +14,7 @@ export default new Router({
       component: Hello
     },
     {
-      path: '/posts',
+      path: '/posts-page',
       name: 'Posts',
       component: Posts
     }

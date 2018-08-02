@@ -3,7 +3,7 @@
     <h1>Posts</h1>
     This file will list all the posts.
 
-    <div v-for="post in posts" v-bind:key="post">
+    <div v-for="post in postsX" v-bind:key="post">
       <p>
         <span><b>{{ post.title }}</b></span><br />
         <span>{{ post.description }}</span>
@@ -15,10 +15,10 @@
 <script>
 import PostsService from '@/services/PostsService'
 export default {
-  name: 'posts',
+  name: 'postsX',
   data () {
     return {
-      posts: []
+      postsX: []
     }
   },
   mounted () {
@@ -27,7 +27,7 @@ export default {
   methods: {
     async getPosts () {
       const response = await PostsService.fetchPosts()
-      this.posts = response.data
+      this.postsX = response.data
     }
   }
 }
