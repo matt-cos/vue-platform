@@ -8,7 +8,7 @@ app.use(morgan('combined'))
 app.use(bodyParser.json())
 app.use(cors())
 
-app.get('/', (req, res) => {
+app.get('/home-content', (req, res) => {
   res.send(
     [{
       title: "Matt's Vue Platform",
