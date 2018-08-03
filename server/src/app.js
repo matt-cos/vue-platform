@@ -10,19 +10,29 @@ app.use(cors())
 
 app.get('/home-content', (req, res) => {
   res.send(
-    [{
-      title: "Matt's Vue Platform",
-      description: "I am building this platform to in an attempt to learn Vue"
-    }]
+    [
+      {
+        title: "Home",
+        description: "I am building this platform to in an attempt to learn Vue"
+      }
+    ]
   )
 })
 
 app.get('/posts', (req, res) => {
   res.send(
-    [{
-      title: "Hello World!",
-      description: "Hi there! How are you?"
-    }]
+    [
+      {
+        id: 1,
+        title: "Hello World!",
+        description: "Hi there! How are you?"
+      },
+      {
+        id: 2,
+        title: "Hey World!",
+        description: "How you doin?"
+      }
+    ]
   )
 })
 

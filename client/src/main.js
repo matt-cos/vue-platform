@@ -6,13 +6,19 @@ import router from './router'
 
 Vue.config.productionTip = false
 
-Vue.component('navigation', {
+Vue.component('fullNav', {
+  template: '<div class="nav"><h1>Matt Cosentino</h1><p>Front End Developer, Specializing in WordPress</p><ul><li><a href="/">Home</a></li><li><a href="/posts-page">Posts</a></li></ul></div>'
+})
+
+Vue.component('navItem', {
+  // not working
   data: function () {
     return {
       count: 0
     }
   },
-  template: '<div class="nav"><h2>Navigation</h2><ul><li><a href="/">Home</a></li><li><a href="/posts-page">Posts</a></li></ul></div>'
+  props: ['linkName'],
+  template: '<li><a href="/posts-page">{{ linkName }}</a></li>'
 })
 
 /* eslint-disable no-new */
@@ -20,5 +26,11 @@ new Vue({
   el: '#app',
   router: router,
   components: { App },
-  template: '<App/>'
+  template: '<App/>',
+  data: {
+    navLinks: [
+      { id: 1, linkName: 'qwertyuiop' },
+      { id: 2, linkName: 'qwertyuiop' }
+    ]
+  }
 })

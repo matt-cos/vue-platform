@@ -1,6 +1,13 @@
 <template>
   <div id="app">
-    <navigation/>
+    <fullNav/>
+
+    <!-- <navItem
+      v-for="bing in navLinks"
+      v-bind:key="bing.id"
+      v-bind:linkName="bing.linkName"
+    ></navItem> -->
+
     <router-view/>
   </div>
 </template>
