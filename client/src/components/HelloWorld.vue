@@ -94,18 +94,6 @@
   </div>
 </template>
 
-<!-- <script>
-export default {
-  name: 'HelloWorld',
-  data () {
-    return {
-      msg: 'Matt\'s Vue Platform',
-      description: 'I am building this platform to in an attempt to learn Vue'
-    }
-  }
-}
-</script> -->
-
 <script>
 import PostsService from '@/services/PostsService'
 export default {

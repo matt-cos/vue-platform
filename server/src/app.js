@@ -12,7 +12,7 @@ app.get('/home-content', (req, res) => {
   res.send(
     [{
       title: "Matt's Vue Platform",
-      description: "I am building this platform to in an attempt to learn Vue" 
+      description: "I am building this platform to in an attempt to learn Vue"
     }]
   )
 })

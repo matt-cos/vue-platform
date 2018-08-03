@@ -1,18 +1,6 @@
 <template>
   <div id="app">
-    <h2>Navigation</h2>
-    <ul>
-      <li>
-        <a href="/">
-          Home
-        </a>
-      </li>
-      <li>
-        <a href="/posts-page">
-          Posts
-        </a>
-      </li>
-    </ul>
+    <navigation/>
     <router-view/>
   </div>
 </template>
