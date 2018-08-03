@@ -19,6 +19,17 @@ app.get('/home-content', (req, res) => {
   )
 })
 
+app.get('/contact-content', (req, res) => {
+  res.send(
+    [
+      {
+        phone: "(123) 456-7890",
+        email: "test@test.com"
+      }
+    ]
+  )
+})
+
 app.get('/posts', (req, res) => {
   res.send(
     [

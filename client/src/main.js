@@ -7,7 +7,7 @@ import router from './router'
 Vue.config.productionTip = false
 
 Vue.component('fullNav', {
-  template: '<div class="nav"><h1>Matt Cosentino</h1><p>Front End Developer, Specializing in WordPress</p><ul><li><a href="/">Home</a></li><li><a href="/posts-page">Posts</a></li></ul></div>'
+  template: '<div class="nav"><h1>Matt Cosentino</h1><p>Front End Developer, Specializing in WordPress</p><ul><li><a href="/">Home</a></li><li><a href="/posts-page">Posts</a></li><li><a href="/contact">Contact</a></li></ul></div>'
 })
 
 Vue.component('navItem', {

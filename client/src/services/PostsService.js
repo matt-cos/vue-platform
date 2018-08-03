@@ -6,5 +6,8 @@ export default {
   },
   fetchPosts () {
     return Api().get('posts')
+  },
+  fetchContact () {
+    return Api().get('contact-content')
   }
 }

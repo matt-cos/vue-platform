@@ -1,6 +1,6 @@
 <template>
   <div class="posts">
-    <h1>Posts</h1>
+    <h2>Posts</h2>
     This file will list all the posts.
 
     <div v-for="post in postsX" v-bind:key="post">

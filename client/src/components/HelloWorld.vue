@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
     <div v-for="post in homeContent" v-bind:key="post">
-      <h1>{{ post.title }}</h1>
+      <h2>{{ post.title }}</h2>
       <p>{{ post.description }}</p>
     </div>
     <h2>Essential Links</h2>
