@@ -31,6 +31,33 @@ new Vue({
     navLinks: [
       { id: 1, linkName: 'qwertyuiop' },
       { id: 2, linkName: 'qwertyuiop' }
+    ],
+    essentialLinks: [
+      {
+        id: 1,
+        title: 'Test1',
+        link: 'https://vuejs.org'
+      },
+      {
+        id: 2,
+        title: 'Test2',
+        link: 'https://forum.vuejs.org'
+      },
+      {
+        id: 3,
+        title: 'Test3',
+        link: 'https://chat.vuejs.org'
+      },
+      {
+        id: 4,
+        title: 'Test4',
+        link: 'https://twitter.com/vuejs'
+      },
+      {
+        id: 5,
+        title: 'Test5',
+        link: 'http://vuejs-templates.github.io/webpack/'
+      }
     ]
   }
 })

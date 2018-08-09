@@ -6,6 +6,9 @@
     </div>
     <h2>Essential Links</h2>
     <ul>
+      <li v-for="test in homeContent" v-bind:key="test">
+        {{ test.test.title }}
+      </li>
       <li>
         <a
           href="https://vuejs.org"
